@@ -1,0 +1,20 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "xabikos.javascriptsnippets",
+    "ecmel.vscode-html-css",
+    "visualstudioexptteam.vscodeintellicode",
+    "naumovs.color-highlight",
+    "streetsidesoftware.code-spell-checker",
+    "coenraads.bracket-pair-colorizer",
+    "aaron-bond.better-comments",
+    "formulahendry.auto-rename-tag",
+    "formulahendry.auto-close-tag",
+    "pranaygp.vscode-css-peek",
+    "ritwickdey.liveserver",
+    "pkief.material-icon-theme",
+    "hex-ci.stylelint-plus",
+    "wallabyjs.quokka-vscode",
+    "digitalbrainstem.javascript-ejs-support"
+  ]
+}
