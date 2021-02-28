@@ -5,18 +5,19 @@
 body {
   background-color: #f0eceb;
 }
-footer {
+/* footer {
   margin-top: 30px;
   display: ;
   text-align: center;
-}
+} */
 .app {
   display: flex;
   justify-content: space-evenly;
   background-image: linear-gradient(to left, rgb(223, 233, 243) 0%, white 100%);
   padding: 20px;
 }
-
+.box__show {
+}
 .app__dropdown {
   border: none;
   color: black;
@@ -35,13 +36,17 @@ footer {
   color: #85203b;
   font-size: 2rem;
 }
+@media screen and (max-width: 500px) {
+  .app__header > h1 {
+    font-size: 1rem;
+  }
+}
 
 .app__stats {
   display: flex;
   justify-content: space-between;
 }
-.here {
-}
+
 .app__left {
   flex: 0.9;
 }

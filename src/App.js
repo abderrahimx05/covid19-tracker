@@ -14,6 +14,7 @@ import Table from "./Table";
 import { sortData } from "./fnc";
 //, prettyPrintStat
 import numeral from "numeral";
+import Footer from "./Footer";
 import Map from "./Map";
 import "leaflet/dist/leaflet.css";
 
@@ -69,7 +70,7 @@ const App = () => {
         setInputCountry(countryCode);
         setCountryInfo(data);
         setMapCenter([data.countryInfo.lat, data.countryInfo.long]);
-        setMapZoom(1);
+        setMapZoom(4);
       });
   };
 
@@ -79,7 +80,7 @@ const App = () => {
         <div className="app__header">
           <h1>
             <Typical
-              steps={["covid-19 Tracker", 5000, "COVID-19 Tracker", 5000]}
+              steps={["COVID-19 TRACKER", 5000]}
               loop={Infinity}
               wrapper="d"
             />
@@ -144,9 +145,8 @@ const App = () => {
           </div>
         </CardContent>
       </Card>
-      {/* <footer>
-        <h3>this is made by abderahim</h3>
-      </footer> */}
+
+      <Footer />
     </div>
   );
 };
