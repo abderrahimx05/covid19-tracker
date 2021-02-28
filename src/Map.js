@@ -1,13 +1,20 @@
 import React from "react";
+import { MapContainer, TileLayer } from "react-leaflet";
 import "./Map.css";
+import { showDataOnMap } from "./fnc";
 
-function Map() {
-    return ( <
-        div className = "map" >
-        <
-        h1 > the same map here we go again < /h1>{" "} { /* <img src="https://static-s.aa-cdn.net/img/ios/1508568320/c2481354c5becb089a072c994d82aea3?v=1" /> */ } { " " } <
-        /div>
-    );
+function Map({ countries, casesType, center, zoom }) {
+  return (
+    <div className="map">
+      <MapContainer center={center} zoom={zoom}>
+        <TileLayer
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+        />
+        {showDataOnMap(countries, casesType)}
+      </MapContainer>
+    </div>
+  );
 }
 
 export default Map;

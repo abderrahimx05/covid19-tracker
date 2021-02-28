@@ -1,0 +1,34 @@
+.table {
+  border: 1px solid;
+  margin-top: 20px;
+  overflow: scroll;
+  color: #6a5d5d;
+  background-image: linear-gradient(
+    to left,
+    rgb(173, 169, 150),
+    rgb(242, 242, 242),
+    rgb(219, 219, 219),
+    rgb(234, 234, 234)
+  );
+  height: 400px;
+  box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.5);
+}
+
+.table tr {
+  display: flex;
+  justify-content: space-between;
+}
+
+.table td {
+  padding: 0.5rem;
+  border: none;
+}
+
+.table tr:nth-of-type(odd) {
+  background-image: linear-gradient(
+    109.6deg,
+    rgb(223, 234, 247) 11.2%,
+    rgb(244, 248, 252) 91.1%
+  );
+  box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.5);
+}
